@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Support — Streakly</title>
+  <meta
+    name="description"
+    content="Get help with Streakly, Streakly Pro, iCloud Sync, reminders, backups, and more."
+  >
+
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../" class="brand">
+        <img src="../assets/icon.png" alt="Streakly">
+        <span>Streakly</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="../#features">Features</a>
+        <a href="../#pro">Streakly Pro</a>
+        <a href="./">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="support-main">
+    <div class="support-container">
+
+      <header class="support-header">
+        <span class="eyebrow">Support</span>
+
+        <h1>How can we help?</h1>
+
+        <p>
+          Need help with Streakly, have a question, or found something
+          that isn't working as expected? Send us a message.
+        </p>
+      </header>
+
+      <div class="support-grid">
+
+        <!-- LEFT -->
+        <aside class="support-info">
+
+          <div class="support-info-card">
+            <div class="support-info-icon">?</div>
+
+            <h2>We're here to help.</h2>
+
+            <p>
+              Tell us what happened and include as much detail as possible.
+              We'll get back to you as soon as we can.
+            </p>
+          </div>
+
+          <div class="support-links">
+            <a href="../privacy/">
+              <div>
+                <strong>Privacy Policy</strong>
+                <span>Learn how Streakly handles your data.</span>
+              </div>
+
+              <span>→</span>
+            </a>
+
+            <a href="../terms/">
+              <div>
+                <strong>Terms of Use</strong>
+                <span>Read the terms for using Streakly.</span>
+              </div>
+
+              <span>→</span>
+            </a>
+          </div>
+
+        </aside>
+
+        <!-- FORM -->
+        <section class="support-form-card">
+          <form
+            id="support-form"
+            action="https://formspree.io/f/mlgqyjpy"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="source"
+              value="Streakly Website"
+            >
+
+            <!-- Honeypot -->
+            <div class="form-honeypot" aria-hidden="true">
+              <label>
+                Leave this field empty
+                <input
+                  type="text"
+                  name="_gotcha"
+                  tabindex="-1"
+                  autocomplete="off"
+                >
+              </label>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="topic">What can we help with?</label>
+
+              <select
+                id="topic"
+                name="topic"
+                required
+              >
+                <option value="" disabled selected>
+                  Choose a topic
+                </option>
+
+                <option value="General question">
+                  General question
+                </option>
+
+                <option value="Streakly Pro">
+                  Streakly Pro
+                </option>
+
+                <option value="iCloud Sync">
+                  iCloud Sync
+                </option>
+
+                <option value="Backup & Restore">
+                  Backup & Restore
+                </option>
+
+                <option value="Reminders">
+                  Reminders
+                </option>
+
+                <option value="Bug report">
+                  Bug report
+                </option>
+
+                <option value="Feature request">
+                  Feature request
+                </option>
+
+                <option value="Other">
+                  Other
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Tell us how we can help..."
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="support-submit"
+              id="submit-button"
+            >
+              Send message
+            </button>
+
+            <p class="form-note">
+              Your message will only be used to respond to your support
+              request.
+            </p>
+
+            <div
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+          </form>
+        </section>
+
+      </div>
+
+      <section class="support-faq">
+        <div class="section-heading">
+          <span class="eyebrow">Quick answers</span>
+          <h2>Before you send a message.</h2>
+        </div>
+
+        <div class="faq-grid">
+
+          <article class="faq-card">
+            <h3>Where is my data stored?</h3>
+
+            <p>
+              By default, your Streakly data is stored locally on your
+              device. If you enable iCloud Sync, your data is synchronized
+              using Apple's iCloud services.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Do I need an account?</h3>
+
+            <p>
+              No. Streakly does not use user accounts, so you can start
+              tracking your habits without creating an account.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>How do I restore Streakly Pro?</h3>
+
+            <p>
+              If you've previously purchased Streakly Pro with the same
+              Apple ID, use the Restore Purchases option from the Streakly
+              purchase screen.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Can I disable reminders?</h3>
+
+            <p>
+              Yes. You can manage Streakly's notification permissions at
+              any time from your iPhone Settings.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <a href="../" class="brand">
+          <img src="../assets/icon.png" alt="Streakly">
+          <span>Streakly</span>
+        </a>
+
+        <p>Build habits. Keep the streak.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="../privacy/">Privacy</a>
+        <a href="./">Support</a>
+        <a href="../terms/">Terms</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Streakly</span>
+      <span>Made for iPhone.</span>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById("support-form");
+    const status = document.getElementById("form-status");
+    const button = document.getElementById("submit-button");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      button.disabled = true;
+      button.textContent = "Sending...";
+      status.textContent = "";
+      status.className = "form-status";
+
+      const data = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+          form.reset();
+
+          status.textContent =
+            "Thanks! Your message has been sent successfully.";
+
+          status.className = "form-status success";
+        } else {
+          status.textContent =
+            "Something went wrong. Please try again.";
+
+          status.className = "form-status error";
+        }
+      } catch (error) {
+        status.textContent =
+          "Something went wrong. Please check your connection and try again.";
+
+        status.className = "form-status error";
+      } finally {
+        button.disabled = false;
+        button.textContent = "Send message";
+      }
+    });
+  </script>
+
+</body>
+</html>
