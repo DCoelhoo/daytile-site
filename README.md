@@ -1,1 +1,1 @@
-# Daylium Website
+# Streakly Website
