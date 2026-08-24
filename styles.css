@@ -204,6 +204,21 @@ a {
   font-weight: 600;
 }
 
+.app-store-button {
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.app-store-button:hover {
+  transform: translateY(-2px);
+}
+
+.app-store-button:active {
+  transform: translateY(0);
+}
+
 .secondary-button {
   height: 58px;
 
