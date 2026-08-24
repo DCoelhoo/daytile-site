@@ -221,8 +221,23 @@ a {
   font-weight: 600;
 }
 
+.app-store-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.app-store-badge {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.app-store-link:hover .app-store-badge {
+  opacity: 0.88;
+}
+
 .hero-note {
-  margin-top: 18px;
+  margin-top: 14px;
   font-size: 13px;
   color: var(--text-secondary);
 }
