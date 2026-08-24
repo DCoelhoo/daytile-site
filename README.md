@@ -1,1 +1,1 @@
-# Streakly Website
+# Daytile Website
